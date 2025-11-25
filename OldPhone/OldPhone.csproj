@@ -6,6 +6,29 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>OldPhone</RootNamespace>
+
+        <!-- Library Metadata -->
+        <PackageId>OldPhone</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Ankur Magdum</Authors>
+        <Description>A library for decoding T9-style phone keypad input sequences into text.</Description>
+        <PackageTags>keypad;t9;phone;decoder;text</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/ankurmagdum/old-phone</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+
+        <!-- Documentation -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+
+        <!-- NuGet Package Settings -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
 </Project>
