@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldPhone", "OldPhone\OldPho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldPhone.Tests", "OldPhone.Tests\OldPhone.Tests.csproj", "{F512B2BB-4E6F-4498-8735-81AC4A088A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldPhone.Sample", "OldPhone.Sample\OldPhone.Sample.csproj", "{E5221822-9C11-418A-A08E-9D477219DD5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,18 @@ Global
 		{F512B2BB-4E6F-4498-8735-81AC4A088A7F}.Release|x64.Build.0 = Release|Any CPU
 		{F512B2BB-4E6F-4498-8735-81AC4A088A7F}.Release|x86.ActiveCfg = Release|Any CPU
 		{F512B2BB-4E6F-4498-8735-81AC4A088A7F}.Release|x86.Build.0 = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Debug|x86.Build.0 = Debug|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|x64.Build.0 = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5221822-9C11-418A-A08E-9D477219DD5F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

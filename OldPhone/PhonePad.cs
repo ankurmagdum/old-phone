@@ -1,3 +1,55 @@
+using OldPhone.Core;
+using OldPhone.Decoders;
+
+namespace OldPhone
+{
+    /// <summary>
+    /// Provides a simple facade for keypad decoding operations.
+    /// </summary>
+    public static class PhonePad
+    {
+        private static readonly IKeypadDecoder _defaultDecoder = new T9Decoder();
+
+        /// <summary>
+        /// Decodes T9 keypad input using the standard configuration.
+        /// </summary>
+        /// <param name="input">The keypad input string to decode.</param>
+        /// <returns>The decoded text.</returns>
+        /// <exception cref="System.ArgumentNullException">When input is null.</exception>
+        /// <exception cref="KeypadException">When input contains invalid characters.</exception>
+        /// <example>
+        /// <code>
+        /// string result = PhonePad.Decode("44 444#");  // Returns "HI"
+        /// </code>
+        /// </example>
+        public static string Decode(string input)
+        {
+            return _defaultDecoder.Decode(input);
+        }
+
+        /// <summary>
+        /// Decodes keypad input using a custom decoder.
+        /// </summary>
+        /// <param name="input">The keypad input string to decode.</param>
+        /// <param name="decoder">The decoder to use.</param>
+        /// <returns>The decoded text.</returns>
+        public static string Decode(string input, IKeypadDecoder decoder)
+        {
+            return decoder.Decode(input);
+        }
+
+        /// <summary>
+        /// Creates a new T9 decoder with custom configuration.
+        /// </summary>
+        /// <param name="configuration">The configuration to use.</param>
+        /// <returns>A configured T9 decoder.</returns>
+        public static IKeypadDecoder CreateDecoder(KeypadConfiguration configuration)
+        {
+            return new T9Decoder(configuration);
+        }
+    }
+}
+/*
 using System;
 using System.Text;
 
@@ -145,3 +197,4 @@ namespace OldPhone
         }
     }
 }
+*/
