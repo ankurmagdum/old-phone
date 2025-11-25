@@ -8,7 +8,7 @@ namespace OldPhone
         {
             try
             {
-                string result = PhonePad.DecodeKeypadInput("8 88777444666*664#");
+                string result = PhonePad.DecodeKeypadInput("222 2 3***#");
                 Console.WriteLine($"Decoded message: {result}");
             }
             catch (ArgumentException ex)
